@@ -1,14 +1,25 @@
-function Login (){
+import './Login.css'
+
+function Login ({title}){
     return(
+        
+        <>
+        
+       <div className="title">
+        <h1> {title} </h1>
         <div>
-        <>
-        <h1> yo </h1>
-        <p>lembre-se não pode ter duas <strong> div ou tags vazio separados sem sem eles mesmo dentro de um div ou tag </strong></p>
-        </>
-        <>
-        </>
+            <input type="text" placeholder='Usuario'/>
+            <input type="text" placeholder='senha'/>
+            <button> clicque aqui</button>
 
         </div>
+        
+        </div>
+
+        </>
+       
+
+        
 
       
         

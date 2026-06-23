@@ -8,7 +8,7 @@ function App() {
         subtitulo="O melhor do mundo"
       />
 
-      <Login />
+      <Login title ="Login"/>
     </>
 
 

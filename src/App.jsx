@@ -1,14 +1,17 @@
 import Header from "./components/Header";
 import Login from "./components/Login";
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-    <Header />
-    <Login />
-  </>
-    
-   
+      <Header titulo="Lanchonete Juv 2.0"
+        subtitulo="O melhor do mundo"
+      />
+
+      <Login />
+    </>
+
+
   )
 }
 export default App

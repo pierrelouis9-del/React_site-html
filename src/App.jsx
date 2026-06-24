@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Login from "./components/Login";
 import Cardapio  from "./components/cardapio";
 import Funcionario from "./components/Funcionario";
+import Contador from "./components/Contador";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       
       nome="João"
       cargo="Atendente" />
+
+      <Contador />
     </>
 
 

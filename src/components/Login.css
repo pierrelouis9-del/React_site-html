@@ -1,11 +1,11 @@
 .title{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0);
     gap: 10px;
     margin-top:100px ;
     margin-left: 25%;
     margin-right: 25%;
-    border: 50px;
-    border-radius: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
 
 }
 .title div{
@@ -13,5 +13,5 @@
     flex-direction: column;
     gap: 10px;
     margin: 50px;
-    
+  
 }

@@ -1,25 +1,73 @@
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: 10px;
-    margin-top: 20px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+/* Deixa apenas os textos de preço, quantidade e total menores e pretos */
+.b p,
+.s p,
+.r p{
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0;
 }
 
+/* Área do Total Geral */
+.total{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
+/* Título "Total do Pedido" */
+.total h2{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Valor do total */
+.total h3{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 50px !important;
+    flex-wrap: nowrap !important;
+}
+
+.total{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.total h2,
+.total h3{
+    color: black;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    box-shadow: none;
+}
 
 .b,
 .s,
 .r{
     width: 280px;
-    background-color: white;
+    background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 10px rgba(0,0,0,.2);
 }
 
 .bur img,
@@ -34,23 +82,44 @@
 .b h2,
 .s h2,
 .r h2{
-    margin-top: 10px;
     color: black;
-    font-size: 28px;
+    font-size: 22px;
+    margin: 15px 0 10px;
 }
 
 .b p,
 .s p,
 .r p{
-    color: #ff6600;
-    font-size: 22px;
-    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin: 6px 0;
 }
 
-.b:hover,
-.s:hover,
-.r:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-    box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+.b button,
+.s button,
+.r button{
+    margin: 10px 5px 0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+.b button:hover,
+.s button:hover,
+.r button:hover{
+    background: #e65c00;
+}
+
+.total{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.total h2,
+.total h3{
+    color: black;
 }

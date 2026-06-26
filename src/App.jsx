@@ -16,6 +16,7 @@ function App() {
       <Cardapio 
       burguer="x-Burguer"
       preco1="15.90"
+      
 
       salada="X-Salada"
       preco2="17.90"

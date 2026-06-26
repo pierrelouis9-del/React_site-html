@@ -1,20 +1,31 @@
-import { useState } from "react"
-import "./Contador.css"
+import { useState } from "react";
 
 function Contador() {
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(0);
 
     return (
         <>
+            <h3>Quantidade = [{contador}]</h3>
 
-            <h1>Contador = [{contador}]</h1>
             <div className="res">
-                <button onClick={() => setContador(contador + 1)}>Adicionar</button>
-                <button onClick={() => setContador(contador - 1)}>Diminuir</button>
+                <button onClick={() => setContador(contador + 1)}>
+                    Adicionar
+                </button>
 
+                <button
+                    onClick={() => {
+                        if (contador > 0) {
+                            setContador(contador - 1);
+                        } else {
+                            setContador(0);
+                        }
+                    }}
+                >
+                    Diminuir
+                </button>
             </div>
         </>
-    )
-
+    );
 }
-export default Contador
+
+export default Contador;

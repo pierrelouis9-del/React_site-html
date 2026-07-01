@@ -47,7 +47,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             setTotalBurger(totalBurger + Pburger);
                         }}
                     >
-                        Adicionar
+                       Adicionar +1
                     </button>
 
                     <button
@@ -58,7 +58,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             }
                         }}
                     >
-                        Remover
+                        Remover -1
                     </button>
                 </div>
 
@@ -82,7 +82,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             setTotalSalada(totalSalada + Psalada);
                         }}
                     >
-                        Adicionar
+                        Adicionar +1
                     </button>
 
                     <button
@@ -93,7 +93,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             }
                         }}
                     >
-                        Remover
+                        Remover -1
                     </button>
                 </div>
 
@@ -117,7 +117,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             setTotalRefri(totalRefri + Prefrigerente);
                         }}
                     >
-                        Adicionar
+                        Adicionar +1
                     </button>
 
                     <button
@@ -128,7 +128,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                             }
                         }}
                     >
-                        Remover
+                        Remover -1
                     </button>
                 </div>
 

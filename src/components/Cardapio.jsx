@@ -8,7 +8,7 @@ const Pburger = 15.90;
 const Psalada = 17.90;
 const Prefrigerente = 6.00;
 
-function Cardapio({ burguer, salada, refrigerente }) {
+function Cardapio({ nome}) {
 
     const [qtdBurger, setQtdBurger] = useState(0);
     const [totalBurger, setTotalBurger] = useState(0);
@@ -33,7 +33,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                         <img src={Burger} alt="Burger" />
                     </div>
 
-                    <h2>{burguer}</h2>
+                    <h2>{nome}</h2>
 
                     <p>Preço: R$ {Pburger.toFixed(2)}</p>
 
@@ -68,7 +68,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                         <img src={Salada} alt="Salada" />
                     </div>
 
-                    <h2>{salada}</h2>
+                    <h2>{nome}</h2>
 
                     <p>Preço: R$ {Psalada.toFixed(2)}</p>
 
@@ -103,7 +103,7 @@ function Cardapio({ burguer, salada, refrigerente }) {
                         <img src={Refrigerente} alt="Refrigerente" />
                     </div>
 
-                    <h2>{refrigerente}</h2>
+                    <h2>{nome}</h2>
 
                     <p>Preço: R$ {Prefrigerente.toFixed(2)}</p>
 

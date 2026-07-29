@@ -1,16 +1,22 @@
 import "./Funcionario.css"
 
 
-function Funcionario({ nome, cargo }) {
+function Funcionario({ nome, cargo,foto }) {
     return (
 
         <>
-            <div className="Fun">
+        <div className="container-fun" >
+
+           <div className="Fun">
+           <img src={foto} alt={nome} />
+
                 <h2>Nome: {nome}</h2>
 
-                <p>{cargo}</p>
+                <p><strong>Cargo:</strong> {cargo}</p>
             </div>
-
+  
+        </div>
+           
            
         </>
 

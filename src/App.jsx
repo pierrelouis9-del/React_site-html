@@ -7,15 +7,13 @@ import "./App.css";
 import Burger from "/public/Img/Burger.jpg";
 import Salada from "/public/Img/Salada.jpg";
 import Refrigerente from "/public/Img/Refrigerente.jpg";
-import Joao from "/public/Img/Joao.jpg";
-import Jean from "/public/Img/Jean.jpg";
 import Marian from "/public/Img/Marian.jpg"
 
 function App() {
 
   const funcionarios = [
-    { id: 1, nome: "João Pereira", cargo: "Manager", foto: Joao},
-    { id: 2, nome: "Jean Sabara", cargo: "Atendente", foto: Jean },
+    { id: 1, nome: "João Pereira", cargo: "Manager", foto: "/Img/Joao.jpg"},
+    { id: 2, nome: "Jean Sabara", cargo: "Atendente", foto: "/Img/Jean.jpg" },
     { id: 1, nome: "Marian Rodrguez", cargo: "Atendente", foto: Marian }
   ]
 

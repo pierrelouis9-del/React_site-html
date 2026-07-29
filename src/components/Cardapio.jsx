@@ -40,8 +40,15 @@ function Cardapio({ nome, preco, foto }) {
                     >
                         Remover -1
                     </button>
-
+                <div>
+                    <button 
+                    onClick={() => {
+                        setQtdComida(0)
+                        qtdComida(0)  
+                    }}> Apagar Tudo</button>
                 </div>
+                </div>
+
 
             </div>
 

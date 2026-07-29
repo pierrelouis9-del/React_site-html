@@ -4,12 +4,12 @@ import Cardapio from "./components/Cardapio";
 import Funcionario from "./components/Funcionario";
 import Contador from "./components/Contador";
 import "./App.css";
-import Burger from "./components/Img/Burger.jpg";
-import Salada from "./components/Img/Salada.jpg";
-import Refrigerente from "./components/Img/Refrigerente.jpg";
-import Joao from "./components/Img/Joao.jpg";
-import Jean from "./components/Img/Jean.jpg";
-import Marian from "./components/Img/Marian.jpg"
+import Burger from "/public/Img/Burger.jpg";
+import Salada from "/public/Img/Salada.jpg";
+import Refrigerente from "/public/Img/Refrigerente.jpg";
+import Joao from "/public/Img/Joao.jpg";
+import Jean from "/public/Img/Jean.jpg";
+import Marian from "/public/Img/Marian.jpg"
 
 function App() {
 

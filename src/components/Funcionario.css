@@ -2,5 +2,16 @@
     color: black;
 }
 .Fun{
-margin-top: 20px;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgba(0, 255, 255, 0);
+    text-align: center;
+    margin: 25px;
+
+}
+.Fun img{
+    width: 100%;
+    height: 200px;
+ border-radius: 10px;
 }

@@ -4,3 +4,9 @@
     gap: 50px;
     flex-wrap: wrap;
 }
+.Gestion-stm{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; 
+}

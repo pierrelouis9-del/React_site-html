@@ -1,12 +1,14 @@
 .lanche{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin-top: 75px;
 }
 .Gestion-stm{
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap; 
+    margin-top: 50px;
 }

@@ -1,7 +1,7 @@
 import "./Funcionario.css"
 
 
-function Funcionario({ nome, cargo,foto }) {
+function Funcionario({ nome, cargo, foto, experiencia }) {
     return (
 
         <>
@@ -13,6 +13,8 @@ function Funcionario({ nome, cargo,foto }) {
                 <h2>Nome: {nome}</h2>
 
                 <p><strong>Cargo:</strong> {cargo}</p>
+
+                <p><strong>Experiencia:</strong> {experiencia}Anos</p>
             </div>
   
         </div>

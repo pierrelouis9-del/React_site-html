@@ -10,7 +10,7 @@ function Login ({title}){
         <div>
             <input type="text" placeholder='Usuario'/>
             <input type="text" placeholder='senha'/>
-            <button> clicque aqui</button>
+            <button > clicque aqui</button>
 
         </div>
         

@@ -39,10 +39,10 @@ function Cardapio({ id, nome, preco, foto, categoria, adicionarCarrinho }) {
                         <button
                             onClick={() => {
                                 if(qtdComida > 0) {
-                                    // Envia o objeto completo para o App.jsx
+                                   
                                     adicionarCarrinho({ id, nome, preco, foto, categoria }, qtdComida);
                                     alert(`${qtdComida} ${nome} adicionado(s) ao carrinho`);
-                                    setQtdComida(0); // Zera o contador local após adicionar
+                                    setQtdComida(0); 
                                 } else {
                                     alert("Selecione uma quantidade antes de adicionar!");
                                 }

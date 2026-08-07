@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./contador.css"
+import "./Contador.css"
 
 function Contador() {
     const [contador, setContador] = useState(0);

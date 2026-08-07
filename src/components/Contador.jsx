@@ -1,11 +1,13 @@
 import { useState } from "react";
+import "./contador.css"
 
 function Contador() {
     const [contador, setContador] = useState(0);
 
     return (
-        <>
-            <h3>Quantidade = [{contador}]</h3>
+        <div className="con">
+
+            <h3>Quantidade = {contador}</h3>
 
             <div className="res">
                 <button onClick={() => setContador(contador + 1)}>
@@ -24,7 +26,7 @@ function Contador() {
                     Diminuir
                 </button>
             </div>
-        </>
+        </div>
     );
 }
 

@@ -7,3 +7,14 @@
     margin: 10px;
     margin-top: 20px;
 }
+.con{
+
+    background-color: rgba(240, 248, 255, 0);
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}

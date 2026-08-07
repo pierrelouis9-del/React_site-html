@@ -1,0 +1,26 @@
+.title{
+    background-color: rgba(255, 0, 0, 0);
+    gap: 10px;
+    margin-top:100px ;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+.title div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+  
+}
+input{
+    border: 3px solid rgb(39, 39, 39);
+    height: 20px;
+    color: rgb(60, 255, 0);
+    background-color: rgba(0, 0, 0, 0.288);
+}
+button{
+    border: 3px solid rgb(0, 0, 0);
+}

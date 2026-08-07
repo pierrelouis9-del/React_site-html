@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+
+    <h2>Carrinho de Compras</h2>
+
+    <table border="2" cellPading="10">
+        <tr>
+            <th>Foto</th>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Qtde</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+    
+        <tr>
+            <td>🍔</td>
+            <td>X-Burguer</td>
+            <td>Lanches</td>
+            <td id="qtdBurger">0</td>
+            <td id="precoBurger">R$ 0,00</td>
+            <td>
+                <button onclick="adicionarBurger()">+</button>
+                <button onclick="removerBurger()">-</button>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>🥤</td>
+            <td>Refrigerante</td>
+            <td>Bebidas</td>
+            <td id="qtdRefri">0</td>
+            <td id="precoRefri">R$ 0,00</td>
+            <td>
+                <button onclick="adicionarRefri()">+</button>
+                <button onclick="removerRefri()">-</button>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>🍟</td>
+            <td>Batata Frita</td>
+            <td>Porções</td>
+            <td id="qtdBatata">0</td>
+            <td id="precoBatata">R$ 0,00</td>
+            <td>
+                <button onclick="adicionarBatata()">+</button>
+                <button onclick="removerBatata()">-</button>
+            </td>
+        </tr>
+    </table>
+    
+    <p>Total de itens: <span id="totalItens">0</span></p>
+    <p>Valor Total: <span id="valorTotal">R$ 0,00</span></p>
+
+    
+    <script src="carrinho.js"></script>
+
+</body>
+</html>

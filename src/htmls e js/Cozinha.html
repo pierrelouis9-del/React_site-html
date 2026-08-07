@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pedido-container"></div>
+     
+        <div class="cabecalho">
+            <h1>PEDIDO #001</h1>
+            <div class="info-mesa">
+                <p>Mesa: 03</p>
+                <p>Horário: <span id="hora-pedido">--:--</span></p>
+            </div>
+        </div>
+
+        <div class="itens">
+            <ul class="lista-itens" id="lista-itens">
+                
+            </ul>
+        </div>
+
+        
+        <div class="endereco">
+            <p>senaipr.org.br</p>
+            <p>Rua Senador Accioly Filho, 298 | Cidade Industrial de Curitiba</p>
+            <p>81310-000 | Curitiba-PR | (41) 3271-7100</p>
+        </div>
+
+        
+        <div class="status-container">
+            <div class="status-titulo">Status do Pedido</div>
+            <div class="fluxo" id="fluxo-status">
+                <div class="status-badge" data-status="Recebido">Recebido</div>
+                <div class="seta">➔</div>
+                <div class="status-badge status-ativo" data-status="Preparando">[ Preparando ]</div>
+                <div class="seta">➔</div>
+                <div class="status-badge" data-status="Pronto">Pronto</div>
+                <div class="seta">➔</div>
+                <div class="status-badge" data-status="Entregue">Entregue</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cozinha.js"></script>
+</body>
+</html>

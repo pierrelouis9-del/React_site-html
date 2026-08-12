@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import Login from "./paginas/Login";
-import Cardapio from "./components/Cardapio";
-import Funcionario from "./components/Funcionario";
-import Contador from "./components/Contador";
-import Carrinho from "./paginas/Carrinho";
-import Cozinha from "./components/Cozinha";
+import Header from "../components/Header";
+import Login from "../paginas/Login";
+import Cardapio from "../components/Cardapio";
+import Funcionario from "../components/Funcionario";
+import Contador from "../components/Contador";
+import Carrinho from "../paginas/Carrinho";
+import Cozinha from "../components/Cozinha";
 import "./App.css";
 
 import Burger from "/public/Img/Burger.jpg";

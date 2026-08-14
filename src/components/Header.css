@@ -214,3 +214,27 @@ header {
 .limpar-carrinho:active {
     transform: scale(0.98);
 }
+/* Torna imagens e containers responsivos */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Exemplo de Media Query para celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+    .cozinha-layout-principal, 
+    .pedido-container, 
+    .container-fun {
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+
+    /* Ajusta o menu para não quebrar no celular */
+    header nav, .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

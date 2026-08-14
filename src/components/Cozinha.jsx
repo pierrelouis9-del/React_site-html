@@ -1,4 +1,5 @@
 import "./Cozinha.css";
+import Header from "./Header";
 
 
 function Cozinha({ carrinho }) {

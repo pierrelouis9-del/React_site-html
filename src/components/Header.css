@@ -10,3 +10,187 @@
 .carrinho{
     color: azure;
 }
+/* Container principal do Título */
+.titulo {
+    background-color: #e74c3c; /* Vermelho lanchonete */
+    color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.titulo h2 {
+    margin: 8px 0 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Botão Limpar Carrinho */
+.btn-limpar {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-limpar:hover {
+    background-color: #1a252f;
+}
+
+.btn-limpar:active {
+    transform: scale(0.96);
+}
+
+/* Barra de Navegação (Menu) */
+.menu {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.titulo {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.titulo h2 {
+    margin: 8px 0 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.btn-limpar {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-limpar:hover {
+    background-color: #1a252f;
+}
+
+.btn-limpar:active {
+    transform: scale(0.96);
+}
+
+.menu {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -20,29 +20,28 @@ function Cardapio({ id, nome, preco, foto, categoria, adicionarCarrinho }) {
                         +
                     </button>
 
-                    <button 
+                    <button
                         className="count"
                         onClick={() => {
                             if (qtdComida > 0) setQtdComida(qtdComida - 1);
                         }}
                     >
-                        - 
+                        -
                     </button>
-                    
+
                     <div>
                         <button onClick={() => setQtdComida(0)}>
                             Apagar Tudo
                         </button>
                     </div>
-                    
+
                     <div>
                         <button
                             onClick={() => {
-                                if(qtdComida > 0) {
-                                   
+                                if (qtdComida > 0) {
                                     adicionarCarrinho({ id, nome, preco, foto, categoria }, qtdComida);
                                     alert(`${qtdComida} ${nome} adicionado(s) ao carrinho`);
-                                    setQtdComida(0); 
+                                    setQtdComida(0);
                                 } else {
                                     alert("Selecione uma quantidade antes de adicionar!");
                                 }

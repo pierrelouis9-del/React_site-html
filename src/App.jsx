@@ -4,9 +4,12 @@ import Home from "./paginas/Home";
 import Carrinho from "./paginas/Carrinho";
 import Pedido from "./paginas/Pedido";
 import Login from "./paginas/Login";
+import Cozinha from "./components/Cozinha";
+import Funcionario from "./components/Funcionario";
 
 function App() {
     return (
+        <>
         <Routes>
 
             <Route
@@ -35,6 +38,25 @@ function App() {
             />
 
         </Routes>
+
+        <Routes>
+             <Route
+                path="/"
+                element={<Login title="Login" />}
+            />
+             <Route
+                path="/Cozinha"
+                element={<Cozinha />}
+
+            />
+
+             <Route
+                path="/Funcionario"
+                element={<Funcionario />}
+            />
+
+        </Routes>
+        </>
     );
 }
 

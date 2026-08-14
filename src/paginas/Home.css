@@ -1,9 +1,21 @@
-.lanche{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-top: 75px;
+.lanche {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Força exatos 4 por linha */
+    gap: 20px; /* Espaço entre os cartões */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Para não quebrar no celular, ele diminui as colunas em telas menores */
+@media (max-width: 1024px) {
+    .lanche { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+    .lanche { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .lanche { grid-template-columns: 1fr; }
 }
 .Gestion-stm{
     display: flex;
@@ -11,4 +23,34 @@
     gap: 50px;
     flex-wrap: wrap; 
     margin-top: 50px;
+}
+
+.container-finalizar {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-finalizar-pedido {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-finalizar-pedido:hover {
+    background-color: #219653;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+.btn-finalizar-pedido:active {
+    transform: scale(0.98);
 }

@@ -18,3 +18,57 @@
 p{
     color: black;
 }
+/* Container principal que envolve o componente */
+.container-fun {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Card individual do funcionário */
+.Fun {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Efeito ao passar o mouse por cima do card */
+.Fun:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilização da foto do funcionário */
+.Fun img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #cbd5e1;
+}
+
+/* Nome do funcionário */
+.Fun h2 {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Parágrafos de cargo e experiência */
+.Fun p {
+    font-size: 14px;
+    color: #475569;
+    margin: 4px 0;
+}
+
+/* Destaque para os textos em negrito (Cargo e Experiencia) */
+.Fun p strong {
+    color: #334155;
+}

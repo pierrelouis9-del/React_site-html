@@ -8,27 +8,63 @@ function Pedido() {
   const location = useLocation();
   const statusFluxo = ['Recebido', 'Preparando', 'Pronto', 'Entregue'];
 
-  const carrinho = location.state?.carinho || JSON.parse(localStorage.getItem("meuCarrinho")) || [];
+  const [carrinho, setCarrinho] = React.useState(
+    location.state?.carinho || JSON.parse(localStorage.getItem("meuCarrinho")) || []
+  );
+  
   const [numeroPedido, setNumeroPedido] = React.useState("");
   const [horario, setHorario] = React.useState("");
+  const [numeroMesa, setNumeroMesa] = React.useState("12");
   
-   const [numeroMesa, setNumeroMesa] = React.useState("");
-  const statusAtual = 'Recebido';
+
+  const [statusAtual, setStatusAtual] = React.useState(
+    localStorage.getItem("statusPedido") || "Recebido"
+  );
+
+  function handleLimparCarrinho() {
+    setCarrinho([]);
+    localStorage.removeItem("meuCarrinho");
+  }
 
   React.useEffect(() => {
-    setNumeroPedido(Math.floor(Math.random() * 10000));
-    setNumeroMesa(Math.floor(Math.random() * 20) + 1);
+    
+    const pedidoSalvo = localStorage.getItem("numeroPedido");
+    if (pedidoSalvo) {
+      setNumeroPedido(pedidoSalvo);
+    } else {
+      const novoNum = Math.floor(Math.random() * 10000);
+      localStorage.setItem("numeroPedido", novoNum);
+      setNumeroPedido(novoNum);
+    }
 
-    const horaAtual = new Date().toLocaleTimeString('pt-BR', {
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-    setHorario(horaAtual);
+  
+    const horaSalva = localStorage.getItem("horarioPedido");
+    if (horaSalva) {
+      setHorario(horaSalva);
+    } else {
+      const horaAtual = new Date().toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      localStorage.setItem("horarioPedido", horaAtual);
+      setHorario(horaAtual);
+    }
+
+    
+    const checarStatus = () => {
+      const statusAtualizado = localStorage.getItem("statusPedido");
+      if (statusAtualizado) {
+        setStatusAtual(statusAtualizado);
+      }
+    };
+
+    const intervalo = setInterval(checarStatus, 1000);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (
     <div className="pedido-page">
-      <Header titulo="Seu Pedido" subtitulo="Acompanhe o status" />
+      <Header titulo="Seu Pedido" subtitulo="Acompanhe o status" limparCarrinho={handleLimparCarrinho}/>
 
       <div className="pedido-container">
         
@@ -66,8 +102,6 @@ function Pedido() {
             )}
           </div>
 
-
-
           <div className="pedido-status-section">
             <h2>Status</h2>
             
@@ -88,11 +122,12 @@ function Pedido() {
             </div>
           </div>
 
-        </div>          <div className="pedido-endereco">
+        </div>          
+        <div className="pedido-endereco">
             <p>senaipr.org.br</p>
             <p>Rua Senador Accioly Filho, 298 | Cidade Industrial de Curitiba</p>
             <p>81310-000 | Curitiba-PR | (41) 3271-7100</p>
-          </div>
+        </div>
       </div>
     </div>
   );

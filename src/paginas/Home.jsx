@@ -117,19 +117,9 @@ function Home() {
                 Finalizar Pedido
             </button>
             
-            <div className="Gestion-stm">
-                {funcionarios.map((gestionario) => (
-                    <Funcionario
-                        key={gestionario.id}
-                        nome={gestionario.nome}
-                        cargo={gestionario.cargo}
-                        foto={gestionario.foto}
-                        experiencia={gestionario.experiencia}
-                    />
-                ))}
-            </div>
 
-            <Cozinha carrinho={carrinho} />
+
+            
 
             <Contador />
         </>

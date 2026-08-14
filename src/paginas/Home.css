@@ -27,7 +27,8 @@
 
 .container-finalizar {
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 40px;
+
 }
 
 .btn-finalizar-pedido {
@@ -49,6 +50,7 @@
     background-color: #219653;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+
 }
 
 .btn-finalizar-pedido:active {

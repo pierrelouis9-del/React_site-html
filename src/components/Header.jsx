@@ -24,7 +24,8 @@ function Header({
               
                         
 
-                        <button
+                        <button className="limpar-carrinho"
+                        
                             onClick={limparCarrinho}
                            
                         >

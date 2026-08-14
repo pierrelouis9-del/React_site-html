@@ -1,12 +1,20 @@
 import "./Login.css";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Login({ title }) {
-  const navigate = useNavigate();
 
-  function fazerLogin() {
-   
-    navigate("/Home");
+  
+  const navigate = useNavigate();
+  const [usuario, setUsuario] = useState("");
+  const [senha, setSenha] = useState("");
+
+  function handleLogin() {
+    if ((usuario === "admin" || usuario === "empregado") && senha === "1234") {
+      navigate("/Cozinha");
+    } else {
+      navigate("/Home");
+    }
   }
 
   return (
@@ -17,10 +25,20 @@ function Login({ title }) {
         <div>
           <h2>Login</h2>
 
-          <input type="text" placeholder="Usuário" />
-          <input type="password" placeholder="Senha" />
+          <input 
+            type="text" 
+            placeholder="Usuário" 
+            value={usuario}
+            onChange={(e) => setUsuario(e.target.value)}
+          />
+          <input 
+            type="password" 
+            placeholder="Senha" 
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
 
-          <button onClick={fazerLogin}>
+          <button onClick={handleLogin}>
             Clique aqui
           </button>
 

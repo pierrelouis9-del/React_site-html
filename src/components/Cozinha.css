@@ -1,0 +1,215 @@
+.pedido-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.pedido-container header h1 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.pedido-container header h2 {
+    margin: 15px 0 8px 0;
+    color: #e11d48;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comanda-info {
+    display: flex;
+    justify-content: space-between;
+    background: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #475569;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+.comanda-info p {
+    margin: 0;
+}
+
+.divisor {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 25px 0;
+}
+
+.comanda-itens h3, 
+.comanda-status h2 {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#lista-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-itens li {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    background: #f8fafc;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+    font-size: 15px;
+    color: #334155;
+}
+
+.qtd {
+    font-weight: 700;
+    color: #e11d48;
+    margin-right: 15px;
+    background: #ffe4e6;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.produto {
+    font-weight: 600;
+}
+
+.comanda-status {
+    background-color: #f8fafc;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.fluxo-vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.status-badge {
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    flex: 1;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.status-badge.status-ativo {
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #e11d48;
+    border-color: #e11d48;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+}
+
+.seta-vertical {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.comanda-status button {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.comanda-status button:hover {
+    background-color: #1e293b;
+}
+
+.comanda-status button:active {
+    transform: scale(0.98);
+}
+
+.cozinha-layout-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pedido-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 0;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.sidebar-funcionarios {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-funcionarios h3 {
+    color: #1e293b;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.btn-toggle-func {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.btn-toggle-func:hover {
+    background-color: #1e293b;
+}
+
+.lista-func-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

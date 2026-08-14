@@ -3,6 +3,11 @@ import Header from "../components/Header";
 import "./Carrinho.css";
 
 function Carrinho() {
+    function handleLimparCarrinho() {
+        setCarrinho([]);
+        localStorage.removeItem("meuCarrinho");
+    }
+
     const [itensCarrinho, setItensCarrinho] = useState([]);
 
     useEffect(() => {
@@ -17,7 +22,7 @@ function Carrinho() {
 
     return (
         <>
-            <Header titulo="Carrinho" subtitulo="Resumo do seu pedido" />
+            <Header titulo="Carrinho" subtitulo="Resumo do seu pedido" limparCarrinho={handleLimparCarrinho}/>
             
             <main className="carrinho-container">
                 <h2>Carrinho de Compras</h2>

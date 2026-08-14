@@ -14,7 +14,7 @@ function Pedido() {
   
   const [numeroPedido, setNumeroPedido] = React.useState("");
   const [horario, setHorario] = React.useState("");
-  const [numeroMesa, setNumeroMesa] = React.useState("12");
+  const [numeroMesa, setNumeroMesa] = React.useState("");
   
 
   const [statusAtual, setStatusAtual] = React.useState(

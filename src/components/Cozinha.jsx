@@ -45,11 +45,7 @@ function Cozinha() {
             setHorario(horaAtual);
         }
 
-        // Carrega o status salvo no localStorage ao iniciar
-        const statusSalvo = localStorage.getItem("statusPedido");
-        if (statusSalvo) {
-            setStatusAtual(statusSalvo);
-        }
+       
     }, []);
 
     function avancaStatus() {

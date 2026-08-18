@@ -118,7 +118,7 @@
 .pedido-status-section h2 {
     margin: 0 0 15px 0;
     font-size: 18px;
-    color: #2c3e50;
+    color: #002cee;
 }
 
 .status-fluxo {
@@ -130,15 +130,18 @@
 
 .status-step {
     font-size: 14px;
-    color: #7f8c8d;
+    color: #000000;
 }
 
 .status-step.active {
     font-weight: bold;
-    color: #e74c3c;
+    color: #000000;
+    background-color: #e74c3c;
+    border-radius: 6px;
+    
 }
 
 .status-arrow {
-    color: #bdc3c7;
+    color: #0099ff;
     font-size: 14px;
 }

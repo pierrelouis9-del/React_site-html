@@ -52,22 +52,23 @@
 
 body {
   margin: 0;
-  background-color: #18126ebd;
-  color: #000000;
+  color: var(--text);
+  /* Imagem de hambúrguer artesanal com camada escura sobreposta */
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)),
+    url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 2px dotted  var(--border);
-  min-height: 100svh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
-
 h1,
 h2 {
   font-family: var(--heading);

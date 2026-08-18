@@ -21,7 +21,7 @@ function Home() {
         return carrinhoSalvo ? JSON.parse(carrinhoSalvo) : [];
     });
 
-    const [mostrarCarrinho, setMostrarCarrinho] = useState(false);
+  
 
     const funcionarios = [
         {

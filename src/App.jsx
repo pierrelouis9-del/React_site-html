@@ -10,40 +10,37 @@ import Funcionario from "./components/Funcionario";
 function App() {
     return (
         <>
-        <Routes>
+            <Routes>
 
-            <Route
-                path="/"
-                element={<Login title="Login" />}
-            />
+                <Route
+                    path="/"
+                    element={<Login title="Login" />}
+                />
 
-            <Route
-                path="/Login"
-                element={<Login title="Login" />}
-            />
+                <Route
+                    path="/Login" 
+                    element={<Login title="Login" />}
+                />
 
-            <Route
-                path="/Home"
-                element={<Home />}
-            />
+                <Route
+                    path="/Home"
+                    element={<Home />}
+                />
 
-            <Route
-                path="/Carrinho"
-                element={<Carrinho />}
-            />
+                <Route
+                    path="/Carrinho"
+                    element={<Carrinho />}
+                />
 
-            <Route
-                path="/Pedido"
-                element={<Pedido />}
-            />
+                <Route
+                    path="/Pedido"
+                    element={<Pedido />}
+                />
 
-        </Routes>
+            </Routes>
 
-        <Routes>
-             <Route
-                path="/"
-                element={<Login title="Login" />}
-            />
+            <Routes>
+
              <Route
                 path="/Cozinha"
                 element={<Cozinha />}
@@ -56,6 +53,8 @@ function App() {
             />
 
         </Routes>
+
+
         </>
     );
 }

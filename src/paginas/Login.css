@@ -12,9 +12,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
+    /* Camada preta sobreposta + imagem dessaturada */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.88)),
+        url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=1920&auto=format&fit=crop&sat=-100');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 /* O card principal do Login */
 .title {
     background-color: #ffffff;
@@ -88,4 +93,18 @@
 
 .title button:active {
     transform: translateY(0);
+}
+/* Estilização do link "Esqueceu a senha" */
+.title .esqueceu-senha {
+    color: #6366f1;
+    font-size: 0.875rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.title .esqueceu-senha:hover {
+    color: #4f46e5;
+    text-decoration: underline;
 }

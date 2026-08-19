@@ -7,8 +7,9 @@ function Carrinho() {
         setCarrinho([]);
         localStorage.removeItem("meuCarrinho");
     }
-
+    const [carrinho, setCarrinho] = useState([]); 
     const [itensCarrinho, setItensCarrinho] = useState([]);
+    const usuario = localStorage.getItem("usuario")
 
     useEffect(() => {
         const dadosSalvos = localStorage.getItem("meuCarrinho");
@@ -26,6 +27,8 @@ function Carrinho() {
             
             <main className="carrinho-container">
                 <h2>Carrinho de Compras</h2>
+                <h2>Usuario: {usuario}</h2>
+
 
                 {itensCarrinho.length === 0 ? (
                     <p>Seu carrinho está vazio no momento.</p>

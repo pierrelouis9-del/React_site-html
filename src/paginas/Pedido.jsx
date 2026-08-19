@@ -15,7 +15,7 @@ function Pedido() {
   const [numeroPedido, setNumeroPedido] = React.useState("");
   const [horario, setHorario] = React.useState("");
   const [numeroMesa, setNumeroMesa] = React.useState("");
-  
+  const usuario = localStorage.getItem("usuario")
 
   const [statusAtual, setStatusAtual] = React.useState(
     localStorage.getItem("statusPedido") || "Recebido"
@@ -31,10 +31,21 @@ function Pedido() {
     const pedidoSalvo = localStorage.getItem("numeroPedido");
     if (pedidoSalvo) {
       setNumeroPedido(pedidoSalvo);
+      
     } else {
       const novoNum = Math.floor(Math.random() * 10000);
       localStorage.setItem("numeroPedido", novoNum);
       setNumeroPedido(novoNum);
+    }
+
+    const mesaSalvo = localStorage.getItem("numeroPedido");
+    if (mesaSalvo) {
+      
+      setNumeroMesa(mesaSalvo)
+    } else {
+      const novoNum = Math.floor(Math.random() * 100);
+      localStorage.setItem("numeroMesa", novoNum);
+      setNumeroMesa(novoNum);
     }
 
   
@@ -65,9 +76,10 @@ function Pedido() {
   return (
     <div className="pedido-page">
       <Header titulo="Seu Pedido" subtitulo="Acompanhe o status" limparCarrinho={handleLimparCarrinho}/>
+     
 
       <div className="pedido-container">
-        
+         <h2>Usuario: {usuario}</h2>
         <button 
           className="btn-voltar"
           onClick={() => navigate('/Home')} 

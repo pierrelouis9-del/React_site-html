@@ -224,7 +224,7 @@ img {
     .cozinha-layout-principal, 
     .pedido-container, 
     .container-fun {
-        flex-direction: column !important;
+        flex-direction: row !important;
         width: 100% !important;
         padding: 10px !important;
         box-sizing: border-box;

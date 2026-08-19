@@ -14,6 +14,7 @@ function Cozinha() {
     const [numeroPedido, setNumeroPedido] = useState("");
     const [horario, setHorario] = useState("");
     const [mesa, setMesa] = useState("12");
+    const usuario = localStorage.getItem("usuario")
     
     const [mostrarFuncionarios, setMostrarFuncionarios] = useState(false);
 
@@ -71,6 +72,7 @@ function Cozinha() {
                
                 <div className="pedido-container">
                     <header>
+                        
                         <h1>Cozinha</h1>
                         <br />
                         <h2>PEDIDO #{numeroPedido}</h2>

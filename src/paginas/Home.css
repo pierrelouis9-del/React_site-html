@@ -46,8 +46,8 @@
     cursor: pointer;
     box-shadow: 2px 4px 15px rgba(7, 109, 21, 0.979);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    margin-left: 370px;
-    margin-right: 370px;
+    
+     
 }
 
 .btn-finalizar-pedido:hover {

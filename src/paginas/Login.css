@@ -45,7 +45,7 @@
     width: 100%;
 }
  
-.title input {
+/* .title input { 
     width: 100%;
     padding: 12px 16px;
     border: 2px solid #e2e8f0;
@@ -54,7 +54,7 @@
     outline: none;
     background-color: #f8fafc;
     transition: all 0.2s ease;
-}
+}*/
  
 .title input:focus {
     border-color: #6366f1;

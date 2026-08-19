@@ -16,8 +16,8 @@ import "./Home.css";
 function Home() {
     const navigate = useNavigate();
 
-    const perfil = localStorage.getItem("chave");
-    const usuario = localStorage.getItem("usuario")
+   
+    
 
     const [carrinho, setCarrinho] = useState(() => {
         const carrinhoSalvo = localStorage.getItem("meuCarrinho");
@@ -99,7 +99,7 @@ function Home() {
                 limparCarrinho={handleLimparCarrinho}
             />
 
-            <h2>Usuario: {usuario}</h2>
+           
 
 
             <div className="lanche">

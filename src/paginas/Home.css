@@ -61,3 +61,18 @@
     transform: scale(0.98);
 }
 
+.usuario {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #003cff3b;
+    color: #f10404;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid #c7d2fe;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

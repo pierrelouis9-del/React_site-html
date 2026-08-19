@@ -79,7 +79,7 @@ function Pedido() {
      
 
       <div className="pedido-container">
-         <h2>Usuario: {usuario}</h2>
+         <h2 className='usuario'>Usuario: {usuario}</h2>
         <button 
           className="btn-voltar"
           onClick={() => navigate('/Home')} 

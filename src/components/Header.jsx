@@ -40,7 +40,7 @@ function Header({
             <nav className="menu">
 
                 <Link to="/Home">
-                    Home
+                Home
                 </Link>
 
                 <Link to="/Carrinho">

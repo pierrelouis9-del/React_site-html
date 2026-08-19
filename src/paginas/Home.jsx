@@ -90,7 +90,7 @@ function Home() {
 
 
             <Header
-                titulo="Lanchonete Juv 2.0"
+                titulo="Lanchonete Juv"
                 subtitulo="O melhor do mundo"
                 carrinho={carrinho}
                 limparCarrinho={handleLimparCarrinho}

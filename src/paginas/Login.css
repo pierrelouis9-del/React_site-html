@@ -1,18 +1,17 @@
-/* Reset básico para alinhar tamanhos e fontes */
+ 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', system-ui, sans-serif;
 }
-
-/* Centraliza o card no meio da tela inteira */
+ 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* Camada preta sobreposta + imagem dessaturada */
+   
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.88)),
         url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=1920&auto=format&fit=crop&sat=-100');
@@ -20,7 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-/* O card principal do Login */
+ 
 .title {
     background-color: #ffffff;
     padding: 40px 30px;
@@ -33,16 +32,14 @@
     flex-direction: column;
     align-items: center;
 }
-
-/* Título <h1> */
+ 
 .title h1 {
     color: #0f172a;
     font-size: 1.8rem;
     margin-bottom: 24px;
     font-weight: 700;
 }
-
-/* Div interna que envelopa os inputs e botão */
+ 
 .title div {
     display: flex;
     flex-direction: column;
@@ -50,7 +47,7 @@
     width: 100%;
 }
 
-/* Estilização dos Inputs */
+ 
 .title input {
     width: 100%;
     padding: 12px 16px;
@@ -61,15 +58,14 @@
     background-color: #f8fafc;
     transition: all 0.2s ease;
 }
-
-/* Efeito ao clicar no Input */
+ 
 .title input:focus {
     border-color: #6366f1;
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
-/* Estilização do Botão */
+ 
 .title button {
     width: 100%;
     padding: 12px;
@@ -84,7 +80,7 @@
     margin-top: 5px;
 }
 
-/* Efeito ao passar o mouse sobre o Botão */
+ 
 .title button:hover {
     background-color: #4f46e5;
     transform: translateY(-2px);
@@ -94,17 +90,4 @@
 .title button:active {
     transform: translateY(0);
 }
-/* Estilização do link "Esqueceu a senha" */
-.title .esqueceu-senha {
-    color: #6366f1;
-    font-size: 0.875rem;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-    transition: color 0.2s ease;
-}
-
-.title .esqueceu-senha:hover {
-    color: #4f46e5;
-    text-decoration: underline;
-}
+ 

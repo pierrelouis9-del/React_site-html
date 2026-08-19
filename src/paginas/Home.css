@@ -1,13 +1,13 @@
 .lanche {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Força exatos 4 por linha */
-    gap: 20px; /* Espaço entre os cartões */
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 20px;  
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Para não quebrar no celular, ele diminui as colunas em telas menores */
+ 
 @media (max-width: 1024px) {
     .lanche { grid-template-columns: repeat(3, 1fr); }
 }
@@ -44,8 +44,10 @@
     letter-spacing: 1px;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+    box-shadow: 2px 4px 15px rgba(7, 109, 21, 0.979);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .btn-finalizar-pedido:hover {

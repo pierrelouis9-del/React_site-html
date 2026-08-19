@@ -53,7 +53,7 @@
 body {
   margin: 0;
   color: var(--text);
-  /* Imagem de hambúrguer artesanal com camada escura sobreposta */
+   
   background-image: 
     linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)),
     url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1920&auto=format&fit=crop');

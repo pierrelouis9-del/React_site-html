@@ -10,9 +10,9 @@
 .carrinho{
     color: azure;
 }
-/* Container principal do Título */
+
 .titulo {
-    background-color: #e74c3c; /* Vermelho lanchonete */
+    background-color: #e74c3c; 
     color: #ffffff;
     padding: 30px 20px;
     display: flex;
@@ -38,7 +38,7 @@
     opacity: 0.9;
 }
 
-/* Botão Limpar Carrinho */
+
 .btn-limpar {
     background-color: #2c3e50;
     color: white;
@@ -59,7 +59,7 @@
     transform: scale(0.96);
 }
 
-/* Barra de Navegação (Menu) */
+
 .menu {
     background-color: #2c3e50;
     display: flex;
@@ -89,7 +89,7 @@
     color: white;
 }
 
-/* Responsividade para celulares */
+
 @media (max-width: 600px) {
     .menu {
         flex-direction: column;
@@ -214,14 +214,13 @@ header {
 .limpar-carrinho:active {
     transform: scale(0.98);
 }
-/* Torna imagens e containers responsivos */
+
 img {
     max-width: 100%;
     height: auto;
 }
-
-/* Exemplo de Media Query para celulares (telas menores que 768px) */
-@media (max-width: 768px) {
+ 
+@media (max-width: 250px) {
     .cozinha-layout-principal, 
     .pedido-container, 
     .container-fun {
@@ -231,7 +230,7 @@ img {
         box-sizing: border-box;
     }
 
-    /* Ajusta o menu para não quebrar no celular */
+  
     header nav, .menu-lateral {
         display: flex;
         flex-direction: column;

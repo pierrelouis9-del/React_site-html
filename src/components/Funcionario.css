@@ -18,13 +18,13 @@
 p{
     color: black;
 }
-/* Container principal que envolve o componente */
+ 
 .container-fun {
     display: flex;
-    flex-direction: row;     /* Coloca os cards lado a lado */
-    flex-wrap: wrap;         /* Quebra para a linha de baixo se não couber */
-    justify-content: center; /* Centraliza os cards na tela */
-    gap: 20px;               /* Espaçamento entre cada card */
+    flex-direction: row;      
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 20px;               
     width: 100%;
     padding: 20px;
 }

@@ -56,7 +56,7 @@ function Cozinha() {
         else if (statusAtual === "Pronto") proximoStatus = "Entregue";
 
         setStatusAtual(proximoStatus);
-        localStorage.setItem("statusPedido", proximoStatus); // Salva a mudança no localStorage
+        localStorage.setItem("statusPedido", proximoStatus);  
     }
 
     return (
@@ -68,7 +68,7 @@ function Cozinha() {
             />
 
             <div className="cozinha-layout-principal">
-                {/* Lado Esquerdo: Comanda do Pedido */}
+               
                 <div className="pedido-container">
                     <header>
                         <h1>Cozinha</h1>
@@ -117,7 +117,7 @@ function Cozinha() {
                     </section>
                 </div>
 
-                {/* Lado Direito Condicional */}
+         
                 <aside className="sidebar-funcionarios">
                     <button 
                         className="btn-toggle-func"

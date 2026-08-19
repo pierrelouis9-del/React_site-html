@@ -25,14 +25,14 @@ function Login({ title }) {
       setMensagemAlerta("Bem-vindo(a) caro Empregado!");
       localStorage.setItem("chave", "valor");
       localStorage.setItem("usuario", usuario);
-      setTimeout(() => navigate("/Home"), 1500);
+      setTimeout(() => navigate("/Cozinha"), 1500);
 
     } else if ((usuario === "cliente") && senha === "1234") {
       setMensagemAlerta("Bem-vindo(a) na Lanchonete do JUV caro Cliente!");
       localStorage.setItem("chave", "valor");
       localStorage.setItem("usuario", usuario);
       setTimeout(() => navigate("/Home"), 1500);
-      
+
     } else {
       setMensagemAlerta("Usuário não reconhecido. Tente 'cliente' e '1234'");
       setTimeout(() => setMensagemAlerta(""), 3000); 
